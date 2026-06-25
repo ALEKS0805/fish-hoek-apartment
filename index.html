@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean & Mountain View Apartment for Sale | Fish Hoek, Cape Town</title>
+<meta name="description" content="Fully furnished 1-bedroom apartment for sale in Fish Hoek, Cape Town. 70m², ocean and mountain views, shared pool, secure complex, walk to beach and shops. R4,500,000.">
+<meta property="og:title" content="Ocean & Mountain View Apartment for Sale | Fish Hoek, Cape Town">
+<meta property="og:description" content="Fully furnished 1-bedroom apartment, 70m², ocean & mountain views, shared pool, secure complex of 4. R4,500,000. Ready to move in.">
+<meta property="og:image" content="01-living-ocean-view.jpg">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --navy:#1b2a3a;
+    --sand:#f5f1ea;
+    --ocean:#2f7c8c;
+    --gold:#c9a063;
+    --text:#2b2b2b;
+    --muted:#6b6b6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia, 'Times New Roman', serif; color:var(--text); background:#fff; line-height:1.6;}
+  h1,h2,h3{font-family:'Helvetica Neue', Arial, sans-serif; font-weight:600; letter-spacing:0.5px;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  header.hero{position:relative; height:78vh; min-height:420px; overflow:hidden;}
+  header.hero img{width:100%; height:100%; object-fit:cover;}
+  header.hero .overlay{
+    position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%);
+    display:flex; flex-direction:column; justify-content:flex-end; padding:40px 24px;
+  }
+  header.hero .overlay .wrap{color:#fff;}
+  header.hero .eyebrow{font-family:'Helvetica Neue', Arial, sans-serif; text-transform:uppercase; letter-spacing:2px; font-size:13px; color:var(--gold); margin-bottom:8px;}
+  header.hero h1{font-size:clamp(28px, 5vw, 48px); color:#fff; max-width:760px;}
+  header.hero .loc{margin-top:10px; font-size:18px; opacity:0.9;}
+
+  .price-bar{background:var(--navy); color:#fff; padding:18px 0;}
+  .price-bar .wrap{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;}
+  .price-bar .price{font-family:'Helvetica Neue', Arial, sans-serif; font-size:28px; font-weight:700;}
+  .price-bar .approx{font-size:14px; color:#cfd6dd;}
+  .price-bar .cta a{background:var(--gold); color:var(--navy); padding:10px 22px; border-radius:4px; text-decoration:none; font-family:'Helvetica Neue', Arial, sans-serif; font-weight:600; font-size:14px;}
+
+  .facts{display:flex; flex-wrap:wrap; gap:0; border-bottom:1px solid #e6e2d8; border-top:1px solid #e6e2d8;}
+  .facts .fact{flex:1 1 16%; text-align:center; padding:22px 10px; border-right:1px solid #e6e2d8;}
+  .facts .fact:last-child{border-right:none;}
+  .facts .fact .num{font-family:'Helvetica Neue', Arial, sans-serif; font-size:22px; font-weight:700; color:var(--navy);}
+  .facts .fact .label{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-top:4px; font-family:'Helvetica Neue', Arial, sans-serif;}
+
+  section{padding:56px 0;}
+  section.alt{background:var(--sand);}
+  h2{font-size:28px; color:var(--navy); margin-bottom:18px;}
+  p{font-size:17px; color:#3a3a3a; max-width:740px;}
+  .lead{font-size:19px; color:var(--navy); max-width:760px; margin-bottom:6px;}
+
+  .features-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:18px; margin-top:24px;}
+  .feature{background:#fff; border:1px solid #e6e2d8; border-radius:6px; padding:18px; font-family:'Helvetica Neue', Arial, sans-serif; font-size:15px; color:var(--navy);}
+  .feature .icon{font-size:22px; margin-bottom:8px; display:block;}
+
+  .gallery{display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-top:24px;}
+  .gallery img{width:100%; height:240px; object-fit:cover; border-radius:4px; cursor:pointer; transition:opacity .2s;}
+  .gallery img:hover{opacity:0.85;}
+  @media (max-width:700px){ .gallery{grid-template-columns:repeat(2,1fr);} .gallery img{height:160px;} }
+
+  .lightbox{display:none; position:fixed; inset:0; background:rgba(10,15,20,0.92); z-index:99; align-items:center; justify-content:center; padding:20px;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:92vw; max-height:88vh; border-radius:4px;}
+  .lightbox .close{position:absolute; top:18px; right:24px; color:#fff; font-size:32px; cursor:pointer; font-family:Arial, sans-serif;}
+  .lightbox .nav{position:absolute; top:50%; transform:translateY(-50%); color:#fff; font-size:36px; cursor:pointer; padding:10px 16px; font-family:Arial, sans-serif; user-select:none;}
+  .lightbox .prev{left:10px;} .lightbox .next{right:10px;}
+
+  .map-frame{margin-top:20px; border:1px solid #e6e2d8; border-radius:6px; overflow:hidden;}
+  .map-frame iframe{width:100%; height:380px; border:0;}
+
+  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:16px; margin-top:24px;}
+  .contact-card{background:#fff; border:1px solid #e6e2d8; border-radius:6px; padding:24px; text-align:center; font-family:'Helvetica Neue', Arial, sans-serif;}
+  .contact-card .icon{font-size:30px; margin-bottom:10px;}
+  .contact-card a.btn{display:inline-block; margin-top:12px; background:var(--ocean); color:#fff; text-decoration:none; padding:10px 18px; border-radius:4px; font-weight:600; font-size:14px;}
+  .contact-card.whatsapp a.btn{background:#25D366;}
+  .contact-card.email a.btn{background:var(--navy);}
+  .contact-card.phone a.btn{background:var(--gold); color:var(--navy);}
+
+  form.contact-form{margin-top:30px; max-width:600px; background:#fff; border:1px solid #e6e2d8; border-radius:6px; padding:28px;}
+  form.contact-form label{display:block; font-family:'Helvetica Neue', Arial, sans-serif; font-size:13px; color:var(--navy); margin-top:14px; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.5px;}
+  form.contact-form input, form.contact-form textarea{width:100%; padding:10px 12px; border:1px solid #ccc; border-radius:4px; font-family:Arial, sans-serif; font-size:15px;}
+  form.contact-form button{margin-top:18px; background:var(--navy); color:#fff; border:none; padding:12px 26px; border-radius:4px; font-size:15px; cursor:pointer; font-family:'Helvetica Neue', Arial, sans-serif; font-weight:600;}
+  form.contact-form .note{font-size:13px; color:var(--muted); margin-top:10px;}
+
+  footer{background:var(--navy); color:#cfd6dd; text-align:center; padding:30px 0; font-family:'Helvetica Neue', Arial, sans-serif; font-size:13px;}
+  footer a{color:var(--gold);}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="01-living-ocean-view.jpg" alt="Open-plan living room with ocean and mountain views">
+  <div class="overlay">
+    <div class="wrap">
+      <div class="eyebrow">For Sale &middot; Private Listing</div>
+      <h1>Ocean &amp; Mountain View Apartment, Fish Hoek</h1>
+      <div class="loc">Fynbos Rise, Fish Hoek &middot; Cape Town, South Africa</div>
+    </div>
+  </div>
+</header>
+
+<div class="price-bar">
+  <div class="wrap">
+    <div>
+      <div class="price">R 4,500,000</div>
+      <div class="approx">&asymp; $272,000 USD &middot; &asymp; &euro;240,000 EUR (indicative, fluctuates daily)</div>
+    </div>
+    <div class="cta"><a href="#contact">Enquire Now</a></div>
+  </div>
+</div>
+
+<div class="facts wrap" style="margin-top:0;">
+  <div class="fact"><div class="num">1</div><div class="label">Bedroom</div></div>
+  <div class="fact"><div class="num">1</div><div class="label">Bathroom</div></div>
+  <div class="fact"><div class="num">1</div><div class="label">Parking Bay</div></div>
+  <div class="fact"><div class="num">70m&sup2;</div><div class="label">Floor Size</div></div>
+  <div class="fact"><div class="num">4</div><div class="label">Units in Complex</div></div>
+  <div class="fact"><div class="num">&#9733;</div><div class="label">Fully Furnished</div></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>A Turnkey Home Above the Atlantic</h2>
+    <p class="lead">Move in tomorrow, or let it pay for itself.</p>
+    <p>This light-filled, 70m&sup2; apartment sits in a small, quiet complex of just four homes in Fish Hoek &mdash;
+    one of Cape Town's most sought-after seaside villages on the False Bay coast. Floor-to-ceiling windows and a
+    private balcony frame uninterrupted views over the ocean and the surrounding mountains, while the open-plan
+    living area, fitted kitchen, and comfortable bedroom are finished to a high standard throughout.</p>
+    <p style="margin-top:14px;">The apartment is fully furnished and completely turnkey &mdash; ready to move into
+    immediately, use as a lock-up-and-go holiday base, or rent out as an investment. Residents share a maintained
+    pool and garden, and the complex is monitored by a security company for peace of mind. You're a short walk from
+    Fish Hoek's beach, restaurants, and shops, with everything you need close by.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature"><span class="icon">&#127754;</span>Ocean &amp; mountain views</div>
+      <div class="feature"><span class="icon">&#127958;</span>Walk to the beach</div>
+      <div class="feature"><span class="icon">&#127978;</span>Shared swimming pool</div>
+      <div class="feature"><span class="icon">&#127807;</span>Shared garden</div>
+      <div class="feature"><span class="icon">&#128274;</span>Security company monitored</div>
+      <div class="feature"><span class="icon">&#128717;</span>Fully furnished &amp; turnkey</div>
+      <div class="feature"><span class="icon">&#128663;</span>Dedicated parking bay</div>
+      <div class="feature"><span class="icon">&#128054;</span>Pet friendly</div>
+      <div class="feature"><span class="icon">&#127979;</span>Fibre internet ready</div>
+      <div class="feature"><span class="icon">&#127978;</span>Close to shops &amp; restaurants</div>
+      <div class="feature"><span class="icon">&#127968;</span>Small, quiet complex (4 units)</div>
+      <div class="feature"><span class="icon">&#9745;</span>Move-in ready</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <div class="gallery" id="gallery">
+      <img src="01-living-ocean-view.jpg" alt="Living room with ocean view">
+      <img src="02-living-room.jpg" alt="Open-plan living area">
+      <img src="03-living-room-wide.jpg" alt="Living area wide angle">
+      <img src="04-bedroom.jpg" alt="Bedroom">
+      <img src="05-bathroom.jpg" alt="Bathroom with double sink">
+      <img src="06-kitchen.jpg" alt="Fitted kitchen">
+      <img src="07-pool-mountain-view.jpg" alt="Shared pool with mountain view">
+      <img src="08-fish-hoek-aerial.jpg" alt="Fish Hoek and the coastline">
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lb-close">&times;</span>
+  <span class="nav prev" id="lb-prev">&#8249;</span>
+  <img id="lb-img" src="" alt="">
+  <span class="nav next" id="lb-next">&#8250;</span>
+</div>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Location: Fish Hoek, Cape Town</h2>
+    <p>Fish Hoek is a relaxed seaside village on Cape Town's False Bay coast, known for its long, family-friendly
+    swimming beach, mild micro-climate, and easy access to both the city and the Cape Peninsula's nature reserves.
+    The apartment is on Fynbos Rise, close to local shops, cafes, and restaurants, with the beach within easy
+    walking distance.</p>
+    <div class="map-frame">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=Fynbos%20Rise%2C%20Fish%20Hoek%2C%20Cape%20Town&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Enquire About This Property</h2>
+    <p>Reach out directly &mdash; international buyers welcome. Replies typically within 24 hours.</p>
+    <div class="contact-grid">
+      <div class="contact-card whatsapp">
+        <div class="icon">&#128172;</div>
+        <strong>WhatsApp</strong>
+        <p style="font-size:14px; margin-top:6px;">Fastest way to reach me, send photos/video requests directly.</p>
+        <a class="btn" id="wa-link" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-card email">
+        <div class="icon">&#9993;</div>
+        <strong>Email</strong>
+        <p style="font-size:14px; margin-top:6px;">aleksandra0805@gmail.com</p>
+        <a class="btn" href="mailto:aleksandra0805@gmail.com?subject=Enquiry%3A%20Fish%20Hoek%20Apartment&body=Hi%20Aleksandra%2C%0A%0AI%27m%20interested%20in%20the%20Fish%20Hoek%20apartment%20listing.">Send Email</a>
+      </div>
+      <div class="contact-card phone">
+        <div class="icon">&#128222;</div>
+        <strong>Phone</strong>
+        <p style="font-size:14px; margin-top:6px;">Tap to call directly (mobile-friendly).</p>
+        <a class="btn" id="tel-link" href="#">Call Now</a>
+      </div>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/xaqgenve" method="POST">
+      <h3 style="font-family:'Helvetica Neue',Arial,sans-serif; color:var(--navy); font-size:18px;">Or send a message directly</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required>Hi Aleksandra, I'm interested in the Fish Hoek apartment listing.</textarea>
+      <button type="submit">Send Message</button>
+      <p class="note">This form delivers straight to Aleksandra's inbox via Formspree (free plan, no cost). See setup notes provided separately.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    1 Bedroom Apartment &middot; Fish Hoek, Cape Town &middot; R 4,500,000 &middot; Listed privately by the owner
+    <br><br>
+    &copy; 2026 &mdash; Information deemed reliable but not guaranteed. Buyer to verify all details independently.
+  </div>
+</footer>
+
+<script>
+  // Phone number assembled at runtime (not present as plain text in the page source)
+  // so basic listing-site scrapers can't harvest it automatically.
+  (function(){
+    var d = [2,7,7,3,8,5,6,3,1,0,7].join('');
+    var wa = document.getElementById('wa-link');
+    var tel = document.getElementById('tel-link');
+    if (wa) wa.href = 'https://wa.me/' + d + '?text=' + encodeURIComponent("Hi Aleksandra, I'm interested in the Fish Hoek apartment listing.");
+    if (tel) tel.href = 'tel:+' + d;
+  })();
+
+  const images = Array.from(document.querySelectorAll('#gallery img')).map(img => ({src: img.src, alt: img.alt}));
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  let current = 0;
+
+  function openLightbox(i){
+    current = i;
+    lbImg.src = images[i].src;
+    lbImg.alt = images[i].alt;
+    lightbox.classList.add('open');
+  }
+  function closeLightbox(){ lightbox.classList.remove('open'); }
+  function show(delta){
+    current = (current + delta + images.length) % images.length;
+    lbImg.src = images[current].src;
+    lbImg.alt = images[current].alt;
+  }
+
+  document.querySelectorAll('#gallery img').forEach((img, i) => {
+    img.addEventListener('click', () => openLightbox(i));
+  });
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  document.getElementById('lb-prev').addEventListener('click', () => show(-1));
+  document.getElementById('lb-next').addEventListener('click', () => show(1));
+  lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if(!lightbox.classList.contains('open')) return;
+    if(e.key === 'Escape') closeLightbox();
+    if(e.key === 'ArrowLeft') show(-1);
+    if(e.key === 'ArrowRight') show(1);
+  });
+</script>
+
+</body>
+</html>
