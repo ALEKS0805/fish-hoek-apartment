@@ -202,24 +202,24 @@
       <div class="contact-card whatsapp">
         <div class="icon">&#128172;</div>
         <strong>WhatsApp</strong>
-        <p style="font-size:14px; margin-top:6px;">Fastest way to reach me, send photos/video requests directly.</p>
-        <a class="btn" id="wa-link" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <p style="font-size:14px; margin-top:6px;">Send a message below and I'll continue the conversation on WhatsApp.</p>
+        <a class="btn" href="#message-form">Send a Message</a>
       </div>
       <div class="contact-card email">
         <div class="icon">&#9993;</div>
         <strong>Email</strong>
-        <p style="font-size:14px; margin-top:6px;">aleksandra0805@gmail.com</p>
-        <a class="btn" href="mailto:aleksandra0805@gmail.com?subject=Enquiry%3A%20Fish%20Hoek%20Apartment&body=Hi%20Aleksandra%2C%0A%0AI%27m%20interested%20in%20the%20Fish%20Hoek%20apartment%20listing.">Send Email</a>
+        <p style="font-size:14px; margin-top:6px;">Send a message below and I'll reply by email, usually within 24 hours.</p>
+        <a class="btn" href="#message-form">Send a Message</a>
       </div>
       <div class="contact-card phone">
         <div class="icon">&#128222;</div>
         <strong>Phone</strong>
-        <p style="font-size:14px; margin-top:6px;">Tap to call directly (mobile-friendly).</p>
-        <a class="btn" id="tel-link" href="#">Call Now</a>
+        <p style="font-size:14px; margin-top:6px;">Leave your number below and I'll call you back.</p>
+        <a class="btn" href="#message-form">Send a Message</a>
       </div>
     </div>
 
-    <form class="contact-form" action="https://formspree.io/f/xaqgenve" method="POST">
+    <form class="contact-form" id="message-form" action="https://formspree.io/f/xaqgenve" method="POST">
       <h3 style="font-family:'Helvetica Neue',Arial,sans-serif; color:var(--navy); font-size:18px;">Or send a message directly</h3>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
@@ -242,16 +242,6 @@
 </footer>
 
 <script>
-  // Phone number assembled at runtime (not present as plain text in the page source)
-  // so basic listing-site scrapers can't harvest it automatically.
-  (function(){
-    var d = [2,7,7,3,8,5,6,3,1,0,7].join('');
-    var wa = document.getElementById('wa-link');
-    var tel = document.getElementById('tel-link');
-    if (wa) wa.href = 'https://wa.me/' + d + '?text=' + encodeURIComponent("Hi Aleksandra, I'm interested in the Fish Hoek apartment listing.");
-    if (tel) tel.href = 'tel:+' + d;
-  })();
-
   const images = Array.from(document.querySelectorAll('#gallery img')).map(img => ({src: img.src, alt: img.alt}));
   const lightbox = document.getElementById('lightbox');
   const lbImg = document.getElementById('lb-img');
