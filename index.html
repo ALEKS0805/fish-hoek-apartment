@@ -197,34 +197,17 @@
 <section id="contact">
   <div class="wrap">
     <h2>Enquire About This Property</h2>
-    <p>Reach out directly &mdash; international buyers welcome. Replies typically within 24 hours.</p>
-    <div class="contact-grid">
-      <div class="contact-card whatsapp">
-        <div class="icon">&#128172;</div>
-        <strong>WhatsApp</strong>
-        <p style="font-size:14px; margin-top:6px;">Send a message below and I'll continue the conversation on WhatsApp.</p>
-        <a class="btn" href="#message-form">Send a Message</a>
-      </div>
-      <div class="contact-card email">
-        <div class="icon">&#9993;</div>
-        <strong>Email</strong>
-        <p style="font-size:14px; margin-top:6px;">Send a message below and I'll reply by email, usually within 24 hours.</p>
-        <a class="btn" href="#message-form">Send a Message</a>
-      </div>
-      <div class="contact-card phone">
-        <div class="icon">&#128222;</div>
-        <strong>Phone</strong>
-        <p style="font-size:14px; margin-top:6px;">Leave your number below and I'll call you back.</p>
-        <a class="btn" href="#message-form">Send a Message</a>
-      </div>
-    </div>
+    <p>Leave your email and/or number below &mdash; international buyers welcome. I'll get back to you by WhatsApp, another chat app, or email, whichever you prefer. Replies typically within 24 hours.</p>
 
     <form class="contact-form" id="message-form" action="https://formspree.io/f/xaqgenve" method="POST">
-      <h3 style="font-family:'Helvetica Neue',Arial,sans-serif; color:var(--navy); font-size:18px;">Or send a message directly</h3>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email">
+      <label for="phone">Phone / WhatsApp Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Include country code, e.g. +44...">
+      <label for="preferred">Preferred way to be contacted</label>
+      <input type="text" id="preferred" name="preferred" placeholder="e.g. WhatsApp, email, phone call">
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" required>Hi Aleksandra, I'm interested in the Fish Hoek apartment listing.</textarea>
       <button type="submit">Send Message</button>
